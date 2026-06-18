@@ -1,0 +1,60 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>
+			Registration page
+		</title>
+		<link rel="stylesheet" href="css/registration.css">
+	</head>
+	<body>
+		<div class="register-box">
+
+		<h1>REGISTER</h1>
+		<nav>
+				<a href="index.html">HOMEPAGE</a>
+				<a href="login.html">LOGIN</a>
+				<a href="category.html">CATEGORY</a>
+				<a href="cart.html">SHOPPING CART</a>
+				<a href="contact.html">CONTACT US</a>
+			</nav>
+
+		<form action="login.html" method="get">
+			<label for="firstname">Firstname:</label>
+			<input type="text" id="firstname" name="firstname" required>
+
+			<label for="lastname">Lastname:</label>
+			<input type="text" id="lastname" name="lastname" required>
+
+			<label for="phonenumber">Phonenumber:</label>
+			<input type="tel" id="phonenumber" name="phonenumber" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="county">County:</label>
+			<select id="county" name="county" required>
+				<option value="">Select a county</option>
+				<option value="Nairobi">Nairobi</option>
+				<option value="Mombasa">Mombasa</option>
+				<option value="Kisumu">Kisumu</option>
+				<option value="Nakuru">Nakuru</option>
+				<option value="Eldoret">Eldoret</option>
+			</select>
+
+			<label for="age">Age:</label>
+			<input type="number" id="age" name="age" min="1" max="120" required>
+
+			<button type="submit">Submit</button>
+		</form>
+
+		<p class="login-link">Already have an account? <a href="login.html">Login here</a></p>
+
+		<div class="page-nav">
+			<a href="login.html" class="nav-btn">Previous</a>
+			<a href="index.html" class="nav-btn">Next</a>
+		</div>
+
+		</div>
+
+	</body>
+</html>

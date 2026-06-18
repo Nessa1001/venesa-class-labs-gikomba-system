@@ -1,36 +1,11 @@
-<!Doctype>
+<!Doctype html>
 <html>
-<a href="index.html">
-	
-
-<style>
-			.container{
-				width:80%;
-				margin:auto;
-				
-
-			}
-			.item {
-    display: inline-block;
-    width: 200px;
-    margin: 20px;
-    border: 1px solid black;
-    text-align: center;
-    padding: 10px;
-}
-			
-			
-		</style>
 	<head>
 		<title>CATEGORY</title>
-		<style>
-			table,tr,td{
-				border:1px solid black;
- 		border-collapse: collapse;
-		</style>
-
+		<link rel="stylesheet" href="css/category.css">
 	</head>
 	<body>
+		<div class="container">
 		<h1>ITEMS CATEGORY</h1>
 		<nav>
 				<a href="index.html">HOMEPAGE</a>
@@ -39,11 +14,12 @@
 				<a href="cart.html">SHOPPING CART</a>
 				<a href="contact.html">CONTACT US</a>
 			</nav>
-		<form>
+		<form class="search-form">
 			<input type="search" placeholder="search items">
 			<input type="submit" value="search">
 		</form>
 		<h2>Products</h2>
+		<div class="products-table">
 		<table>
 			<tr>
 				<th>clothes</th>
@@ -51,235 +27,231 @@
 				<th>utensils</th>
 				<th>Bags</th>
 				<th>electronics</th>
-
-	
 			</tr>
 			<tr>
-				
-			
 			<td>skirts</td>
 			<td>sneakers</td>
 			<td>knives</td>
 			<td>schoolbag</td>
 			<td>laptop</td>
-			
 		</tr>
 			<tr>
-				
 			<td>trouser</td>
 			<td>sandals</td>
 			<td>sufuria</td>
 			<td>laptopbag</td>
 			<td>watches</td>
-			
-
 		<tr>
-			
 			<td>shors</td>
 			<td>sportshoes</td>
 			<td>cups</td>
 			<td>gymbag</td>
 			<td>tablet</td>
-			
-
 		</tr>
 		<tr>
-			
 			<td>tights</td>
 			<td>loffers</td>
 			<td>plates</td>
 			<td>handbag</td>
 			<td>phones</td>
-			
 		</tr>
 		<tr>
-			
 			<td>Dresses</td>
 			<td>heels</td>
 			<td>spoon</td>
 			<td>suitcase</td>
 			<td> phones</td>
-			
 		</tr>
-
-
 		</table>
-		<br></br>
+		</div>
+
+		<section class="category-section">
 		<h2 id="clothes">Clothes</h2>
+		<div class="product-grid">
 		<div class="item">
-			<img src= "skirt.jpg"width="150">
+			<img src="skirt.jpg" width="150" alt="skirts">
 			<h3>skirts</h3>
 			<p>$800</p>
 			<button>Add to Cart</button>
 		</div>
 		<div class="item">
-			<img src="trouser.jpg"width="150">
+			<img src="trouser.jpg" width="150" alt="trouser">
 			<h3>trouser</h3>
 			<p>$900</p>
 			<button>Add to Cart</button>
 		</div>
 		<div class="item">
-			<img src="shorts.jpg"width="150">
+			<img src="shorts.jpg" width="150" alt="shorts">
 			<h3>shorts</h3>
 			<p>$500</p>
 			<button>Add to Cart</button>
 		</div>
-
 		<div class="item">
-			<img src="tights.jpg"width="150">
+			<img src="tights.jpg" width="150" alt="tights">
 			<h3>tight</h3>
 			<p>$200</p>
 			<button>Add to Cart</button>
 		</div>
 		<div class="item">
-			<img src="dress.jpg"width="150">
+			<img src="dress.jpg" width="150" alt="dress">
 			<h3>dress</h3>
 			<p>$350</p>
 			<button>Add to Cart</button>
-		</div><br></br>
+		</div>
+		</div>
+		</section>
 
-		<!shoes>
+		<section class="category-section">
 			<h2 id="shoes">shoes</h2>
+			<div class="product-grid">
 			<div class="item">
-			<img src="sneakers.jpg"width="150">
+			<img src="sneakers.jpg" width="150" alt="sneakers">
 			<h3>sneakers</h3>
 			<p>$1800</p>
 			<button>Add to Cart</button>
 		</div>
 		<div class="item">
-			<img src="sandals.jpg"width="150">
+			<img src="sandals.jpg" width="150" alt="sandals">
 			<h3>sandals</h3>
 			<p>$500</p>
 			<button>Add to Cart</button>
 		</div>
 		<div class="item">
-			<img src="sportshoes.jpg"width="150">
+			<img src="sportshoes.jpg" width="150" alt="sportshoes">
 			<h3>sportshoes</h3>
 			<p>$3000</p>
 			<button>Add to Cart</button>
 		</div>
 		<div class="item">
-			<img src="loffers.jpg"width="150">
+			<img src="loffers.jpg" width="150" alt="loffers">
 			<h3>loffers</h3>
 			<p>$2000</p>
 			<button>Add to Cart</button>
 		</div>
 		<div class="item">
-			<img src="heels.jpg"width="150">
+			<img src="heels.jpg" width="150" alt="heels">
 			<h3>Heels</h3>
 			<p>$400</p>
 			<button>Add to Cart</button>
 		</div>
-		<br></br>
+		</div>
+		</section>
 
-		<!utensils>
+		<section class="category-section">
 			<h2 id="utensils">Utensils</h2>
+			<div class="product-grid">
 			<div class="item">
-			<img src="knives.jpg"width="150">
+			<img src="knives.jpg" width="150" alt="knives">
 			<h3>knives</h3>
 			<p>$80</p>
 			<button>Add to Cart</button>
 		</div>
-
-
 		<div class="item">
-			<img src=width="150">
-			<h3>skirts</h3>
-			<p>$800</p>
-			<button>Add to Cart</button>
-		</div>
-		<div class="item">
-			<img src="sufuria.jpg"width="150">
+			<img src="sufuria.jpg" width="150" alt="sufuria">
 			<h3>sufuria</h3>
 			<p>$100</p>
 			<button>Add to Cart</button>
 		</div>
 		<div class="item">
-			<img src="cups.jpg"width="150">
+			<img src="cups.jpg" width="150" alt="cups">
 			<h3>cups</h3>
 			<p>$400</p>
 			<button>Add to Cart</button>
 		</div>
 		<div class="item">
-			<img src="plates.jpg"width="150">
+			<img src="plates.jpg" width="150" alt="plates">
 			<h3>plates</h3>
 			<p>$150</p>
 			<button>Add to Cart</button>
 		</div>
-		<br></br>
+		<div class="item">
+			<img src="spoon.jpg" width="150" alt="spoon">
+			<h3>spoon</h3>
+			<p>$50</p>
+			<button>Add to Cart</button>
+		</div>
+		</div>
+		</section>
 
-		<!bags>
+		<section class="category-section">
 			<h2 id="bags">bags</h2>
+			<div class="product-grid">
 			<div class="item">
-			<img src="schoolbags.jpg"width="150">
+			<img src="schoolbags.jpg" width="150" alt="schoolbag">
 			<h3>schoolbag</h3>
 			<p>$550</p>
 			<button>Add to Cart</button>
 		</div>
 		<div class="item">
-			<img src="laptopbag.jpg"width="150">
+			<img src="laptopbag.jpg" width="150" alt="laptopbag">
 			<h3>laptopbag</h3>
 			<p>$300</p>
 			<button>Add to Cart</button>
 		</div>
 		<div class="item">
-			<img src="gymbag.jpg"width="150">
+			<img src="gymbag.jpg" width="150" alt="gymbag">
 			<h3>gymbag</h3>
 			<p>$1050</p>
 			<button>Add to Cart</button>
 		</div>
 		<div class="item">
-			<img src="handbag.jpg"width="150">
+			<img src="handbag.jpg" width="150" alt="handbag">
 			<h3>handbag</h3>
 			<p>$1500</p>
 			<button>Add to Cart</button>
 		</div>
 		<div class="item">
-			<img src="suitcase.jpg"width="150">
+			<img src="suitcase.jpg" width="150" alt="suitcase">
 			<h3>suitcase</h3>
 			<p>$5000</p>
 			<button>Add to Cart</button>
 		</div>
-		<br></br>
-		<!electronics>
+		</div>
+		</section>
+
+		<section class="category-section">
 			<h2 id="electronic">electronics</h2>
+			<div class="product-grid">
 			<div class="item">
-			<img src="laptop.jpg"width="150">
+			<img src="laptop.jpg" width="150" alt="laptop">
 			<h3>laptop</h3>
 			<p>$28000</p>
 			<button>Add to Cart</button>
 		</div>
 		<div class="item">
-			<img src="watch.jpg"width="150">
+			<img src="watch.jpg" width="150" alt="watch">
 			<h3>watch</h3>
 			<p>$1500</p>
 			<button>Add to Cart</button>
 		</div>
 		<div class="item">
-			<img src="tablet.jpg"width="150">
+			<img src="tablet.jpg" width="150" alt="tablet">
 			<h3>tablet</h3>
 			<p>$16500</p>
 			<button>Add to Cart</button>
 		</div>
 		<div class="item">
-			<img src="phone.jpg"width="150">
+			<img src="phone.jpg" width="150" alt="phones">
 			<h3>phones</h3>
 			<p>$20000</p>
 			<button>Add to Cart</button>
 		</div>
 		<div class="item">
-			<img src="headphone.jpg"width="150">
+			<img src="headphone.jpg" width="150" alt="headphone">
 			<h3>headphone</h3>
 			<p>$700</p>
 			<button>Add to Cart</button>
 		</div>
-		<br></br>
+		</div>
+		</section>
 
-		
-		<button type="button"> order</button>
+		<button type="button" class="order-btn">order</button>
 
-		<br></br>
+		<div class="page-nav">
+			<a href="index.html" class="nav-btn">Previous</a>
+			<a href="login.html" class="nav-btn">Next</a>
+		</div>
 
-		<button type="button"> previous</button>   
+		</div>
 	</body>
 </html>

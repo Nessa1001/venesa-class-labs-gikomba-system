@@ -1,27 +1,16 @@
 <!Doctype html>
 <html>
-<a href="category.html">
-
-<style>
-			.container{
-				width:80%;
-				margin:auto;
-				
-
-			}
-	
-		</style>
 	<head>
 		<title>
 			Gikomba system
 		</title>
-		
-
+		<link rel="stylesheet" href="css/index.css">
 	</head>
 	<body>
-		<div class="container">
+		
 		<h1>GIKOMBA SECOND HAND ONLINE SHOPPING</h1>
 		<! linked pages>
+			<div class="container">
 			<nav>
 				<a href="index.html">HOMEPAGE</a>
 				<a href="login.html">LOGIN</a>
@@ -45,51 +34,39 @@
 			</table>
 			
 
-			<P1><i>Welcome to Gikomba second-hand store</i></P1>
+			<P1><i>Welcome to Gikomba second hand store</i></P1>
 			<br> </br>
 			<p2><i>Buy Items at affordable prices</i></p2>
 
 			<h1>featured items</h1>
-			<table>
-				<tr>
-					<td>
-						<a href="category.html#clothes">
-						<img src="clothes.jpg" width="170">
-						<p>clothes</p>
-						
-					</td>
-					<td>
-						<a href="category.html#shoes">
-						<img src="shoes.jpg" width="170">
-						<p>shoes</p>
-						
+			<div class="featured-items">
+				<a href="category.html#clothes" class="featured-card">
+					<img src="clothes.jpg" alt="clothes">
+					<p>clothes</p>
+				</a>
+				<a href="category.html#shoes" class="featured-card">
+					<img src="shoes.jpg" alt="shoes">
+					<p>shoes</p>
+				</a>
+				<a href="category.html#electronic" class="featured-card">
+					<img src="electronics.jpg" alt="electronic">
+					<p>electronic</p>
+				</a>
+				<a href="category.html#bags" class="featured-card">
+					<img src="bags.jpg" alt="bags">
+					<p>bags</p>
+				</a>
+				<a href="category.html#utensils" class="featured-card">
+					<img src="utensils.jpg" alt="utensils">
+					<p>utensils</p>
+				</a>
+			</div>
 
-					</td>
-					<td>
-						<a href="category.html#electronic">
-						<img src= "electronics.jpg"width="170">
-						<p>electronic</p>
-						
-
-					</td>
-					<td>
-						<a href="category.html#bags">
-						<img src= "bags.jpg"width="170">
-						<p>bags </p>
-						
-					</td>
-					
-					<td>
-						<a href="category.html#utensils">
-						<img src="utensils.jpg"width="170">
-						<p>utensils</p>
-						
-					</td>
-				</tr>
-				
-			</table>
-			<br></br>
-			<button>next</button>
+			<div class="page-nav">
+				<a href="login.html" class="nav-btn">Previous</a>
+				<a href="category.html" class="nav-btn">Next</a>
+			</div>
+			</div>
 
 	</body>
 </html>
