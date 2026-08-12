@@ -1,0 +1,353 @@
+:root {
+    --brand-900: #0d2a3d;
+    --brand-700: #1a4a64;
+    --accent-500: #ff7a00;
+    --accent-600: #e56d00;
+    --ink-900: #111827;
+    --ink-600: #4b5563;
+    --surface-100: #f6f8fb;
+    --surface-200: #eef2f7;
+    --success-500: #138a4b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sora", sans-serif;
+    background: radial-gradient(circle at top right, #dbeafe 0%, #fef7ed 28%, #f8fafc 70%);
+    color: var(--ink-900);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.brand-mark {
+    font-family: "Playfair Display", serif;
+}
+
+.main-header {
+    backdrop-filter: blur(10px);
+}
+
+.app-navbar {
+    background: rgba(255, 255, 255, 0.88);
+    border-bottom: 1px solid rgba(13, 42, 61, 0.12);
+}
+
+.brand-mark {
+    font-size: 1.75rem;
+    color: var(--brand-900);
+    letter-spacing: 0.6px;
+}
+
+.nav-link {
+    color: var(--ink-600);
+    font-weight: 500;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: var(--brand-900);
+}
+
+.nav-search {
+    position: relative;
+    max-width: 360px;
+    width: 100%;
+}
+
+.live-search-results {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    z-index: 1050;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.1);
+    max-height: 320px;
+    overflow: auto;
+}
+
+.live-search-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 14px;
+    border-bottom: 1px solid #f1f5f9;
+    color: var(--ink-900);
+    text-decoration: none;
+}
+
+.live-search-item:last-child {
+    border-bottom: 0;
+}
+
+.live-search-item:hover {
+    background: #f8fafc;
+}
+
+.icon-link {
+    position: relative;
+    color: var(--brand-900);
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.icon-badge {
+    position: absolute;
+    top: -8px;
+    right: -11px;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    background: var(--accent-500);
+    color: white;
+    font-size: 11px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 5px;
+}
+
+.profile-btn,
+.btn-accent {
+    background: linear-gradient(120deg, var(--accent-500), #ff9f43);
+    color: #fff;
+    border: 0;
+}
+
+.profile-btn:hover,
+.btn-accent:hover {
+    background: var(--accent-600);
+    color: #fff;
+}
+
+.page-shell {
+    min-height: 74vh;
+}
+
+.hero-banner {
+    border-radius: 24px;
+    padding: 56px 34px;
+    background:
+        linear-gradient(120deg, rgba(13, 42, 61, 0.95), rgba(13, 42, 61, 0.66)),
+        url("../../download.jpg");
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 20px 40px rgba(13, 42, 61, 0.24);
+}
+
+.hero-subtitle {
+    font-size: 0.95rem;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
+.hero-title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.filter-bar,
+.surface-card {
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+}
+
+.product-card {
+    position: relative;
+    border-radius: 16px;
+    background: #fff;
+    border: 1px solid #edf2f7;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
+}
+
+.product-badge {
+    position: absolute;
+    z-index: 5;
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 999px;
+    color: #fff;
+}
+
+.badge-new {
+    background: #0ea5e9;
+}
+
+.badge-sale {
+    background: #ef4444;
+}
+
+.badge-trending {
+    background: #f59e0b;
+}
+
+.product-image-wrap {
+    display: block;
+    height: 210px;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.07);
+}
+
+.product-body {
+    padding: 14px;
+}
+
+.product-category {
+    color: var(--ink-600);
+}
+
+.product-title {
+    font-size: 1.05rem;
+    margin: 4px 0;
+}
+
+.product-title a {
+    color: var(--ink-900);
+    text-decoration: none;
+}
+
+.product-title a:hover {
+    color: var(--brand-700);
+}
+
+.product-rating {
+    font-size: 0.85rem;
+}
+
+.stars {
+    color: #f59e0b;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.checkout-summary .line,
+.totals .line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.tracking-stage {
+    padding: 8px 10px;
+    border-left: 3px solid #d1d5db;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.tracking-stage.active {
+    border-left-color: var(--success-500);
+    background: #f0fdf4;
+}
+
+.site-footer {
+    background: linear-gradient(160deg, #0b2232, #15384f);
+    color: #dbe7f2;
+}
+
+.footer-links a {
+    color: #dbe7f2;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.auth-box {
+    max-width: 430px;
+    margin-inline: auto;
+}
+
+.admin-shell .admin-sidebar {
+    position: sticky;
+    top: 90px;
+    background: linear-gradient(180deg, #f8fafc, #eef2f7);
+}
+
+.admin-shell h1,
+.admin-shell h2,
+.admin-shell h3,
+.admin-shell h4,
+.admin-shell h5,
+.admin-shell h6 {
+    font-family: "Sora", sans-serif;
+}
+
+.app-toast {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 1200;
+    padding: 10px 14px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.2);
+    transform: translateY(14px);
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+
+.app-toast.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.app-toast-success {
+    background: #0b8f52;
+}
+
+.app-toast-error {
+    background: #c0392b;
+}
+
+@media (max-width: 991.98px) {
+    .admin-shell .admin-sidebar {
+        position: static;
+    }
+
+    .nav-search {
+        max-width: 100%;
+    }
+
+    .nav-icons {
+        justify-content: flex-start;
+    }
+}
